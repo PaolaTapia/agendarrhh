@@ -2,14 +2,17 @@ import React from "react";
 import {
   BrowserRouter as Router,useRoutes
 } from "react-router-dom";
-import Home from "./pages/Login/Home/Home";
+import Boja from "../pages/Login/Home/Boja";
+import Home from "../pages/Login/Home/Home";
 
 
-const App = () => {
+
+const Routers = () => {
 
   const AppRouter = () => {
     let routes = useRoutes([
       { path: "/", element: <Home /> },
+      { path: "/boca", element: <Boja /> },
     ]);
     return routes;
   };
@@ -24,4 +27,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Routers;
