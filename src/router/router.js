@@ -2,10 +2,11 @@ import React from "react";
 import {
   BrowserRouter as Router,useRoutes
 } from "react-router-dom";
-import Home from "./pages/Login/Home/Home";
+import Home from "../pages/Login/Home/Home";
 
 
-const App = () => {
+
+const Routers = () => {
 
   const AppRouter = () => {
     let routes = useRoutes([
@@ -24,4 +25,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Routers;
